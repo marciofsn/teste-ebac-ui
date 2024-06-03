@@ -46,7 +46,7 @@ describe('Funcionalidade: Login', () => {
     });
 
     //Massa de dados sendo utilizada de forma nativa pelo Cypress
-    it.only('Deve fazer login com sucesso - Usando Fixture', () => { 
+    it('Deve fazer login com sucesso - Usando Fixture', () => { 
         //Pirmeiro carrega os dados do arquivo (perfil.json) e depois faz as insserções através da função dados
         cy.fixture('perfil').then(dados => {
             cy.get('#username').type(dados.usuario)
@@ -55,5 +55,11 @@ describe('Funcionalidade: Login', () => {
 
             cy.get('.topbar-inner > :nth-child(1) > .list-inline > :nth-child(2) > a').should('contain', 'Logout')
         })
+    });
+
+    it('Deve fazer login com sucesso - Usando comandos personalizados', () => {
+        cy.login('marcio_fsn@hotmail.com','fusiion@96')
+
+        cy.get('.topbar-inner > :nth-child(1) > .list-inline > :nth-child(2) > a').should('contain', 'Logout')
     });
 });

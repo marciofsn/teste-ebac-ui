@@ -1,0 +1,20 @@
+[
+    {
+        "nomeProduto": "Eos V-Neck Hoodie",
+        "tamanho": "XS",
+        "cor": "Orange",
+        "quantidade": 7
+    },
+    {
+        "nomeProduto": "Zeppelin Yoga Pant",
+        "tamanho": "32",
+        "cor": "Red",
+        "quantidade": 2
+    },
+    {
+        "nomeProduto": "Taurus Elements Shell",
+        "tamanho": "L",
+        "cor": "Yellow",
+        "quantidade": 12
+    }
+]
